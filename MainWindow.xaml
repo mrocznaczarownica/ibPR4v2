@@ -1,0 +1,41 @@
+﻿<Window x:Class="ibPR4v2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ibPR4v2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="loginTb" Grid.Row="2" Grid.Column="1" Margin="5" Grid.ColumnSpan="6" materialDesign:HintAssist.Hint="Login"/>
+        <Label x:Name="loginNof" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="6"/>
+        <PasswordBox x:Name="passTb" Grid.Row="4" Grid.Column="1" Margin="5" Grid.ColumnSpan="6" materialDesign:HintAssist.Hint="Password" KeyUp="passReyUp" KeyDown="passKeyDown" />
+        <Label x:Name="passNof" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="6"/>
+        <Button Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2" Content="Log In" Background="AliceBlue" Foreground="Black" Click="loginButtonClick"/>
+    </Grid>
+</Window>
